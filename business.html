@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/app.js"></script>
+</head>
+<body class="business">
+
+    <nav class="bg-primary py-3 ">
+        <div class="container mx-auto px-2 flex items-center justify-between">
+            <div class="flex items-center justify-center relative ">
+                <span class="text-white text-2xl mr-1">Pay by</span>
+          
+                <img
+                src="images/Logo 1.png"
+                class="h-12"
+                alt="Phone image"
+            />
+            </div>
+
+                <div class="flex justify-center">
+                    <div>
+                      <div class="dropdown relative">
+                        <button
+                          class="
+                            dropdown-toggle
+                            px-3
+                            py-3
+                            text-gray-500
+                            font-medium
+                            text-sm
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            transition
+                            duration-150
+                            ease-in-out
+                            flex
+                            items-center 
+                            justify-center
+                            h-12 
+                            w-full
+                          "
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        <span class="
+                        px-3
+                        py-3
+                        bg-[#F1F0FB]
+                        text-gray-500 
+                        transition
+                            duration-150
+                            ease-in-out
+                        font-medium rounded-full hover:bg-blue-700 hover:shadow-lg hover:text-white
+                        focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                        active:bg-blue-800 active:shadow-lg active:text-white
+                        
+                        ">
+                           RW 
+                        </span>
+                          
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="caret-down"
+                            class="w-2 ml-2"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                            ></path>
+                          </svg>
+                        </button>
+                        <ul
+                          class="
+                            dropdown-menu
+                            min-w-max
+                            absolute
+                            hidden
+                            bg-white
+                            text-base
+                            z-50
+                            float-left
+                            py-2
+                            list-none
+                            text-left
+                            rounded-lg
+                            shadow-lg
+                            mt-1
+                            hidden
+                            m-0
+                            bg-clip-padding
+                            border-none
+                          "
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a
+                              class="
+                                dropdown-item
+                                text-sm
+                                py-2
+                                px-4
+                                font-normal
+                                block
+                                w-full
+                                whitespace-nowrap
+                                bg-transparent
+                                text-gray-700
+                                hover:bg-gray-100
+                              "
+                              href="#"
+                              >Action</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="
+                                dropdown-item
+                                text-sm
+                                py-2
+                                px-4
+                                font-normal
+                                block
+                                w-full
+                                whitespace-nowrap
+                                bg-transparent
+                                text-gray-700
+                                hover:bg-gray-100
+                              "
+                              href="#"
+                              >Another action</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="
+                                dropdown-item
+                                text-sm
+                                py-2
+                                px-4
+                                font-normal
+                                block
+                                w-full
+                                whitespace-nowrap
+                                bg-transparent
+                                text-gray-700
+                                hover:bg-gray-100
+                              "
+                              href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+
+    </nav>
+
+    <div class="mx-auto mt-7 max-w-[760px] px-3 pb-3">
+
+        <div class="flex flex-col  px-3 py-8 bg-white rounded-lg bx-shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+            <div class="self-center mb-2 text-xl lg:text-4xl font-semibold text-gray-700 text-gray-800 dark:text-white">
+                Add your business
+            </div>
+            <span class="justify-center text-md text-center text-gray-500 flex-items-center dark:text-gray-400">
+                One more step to bring your business global
+            </span>
+            <div class="p-6 mt-8">
+                <form action="#">
+                    <div class="flex flex-col mb-2">
+
+                        <div class="mb-6">
+                            <label class="text-gray-700 dark:text-gray-200 font-medium mb-3" for="business_name">What is your business legal name?</label>
+                            <input id="business_name" type="text" placeholder="Enter your business legal name" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:outline-none" name="business_name" autocomplete="off">        
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="text-gray-700 dark:text-gray-200 font-medium mb-3" for="business_type">What is your business known for?</label>
+                            <input id="business_type" type="text" placeholder="Enter what your business is known for" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:outline-none" name="business_type" autocomplete="off">        
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="text-gray-700 dark:text-gray-200 font-medium mb-3" for="email">Whats your Business email address?</label>
+                            <input id="email" type="email" placeholder="Enter your business address" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:outline-none" name="email" min="3" autocomplete="off">        
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="text-gray-700 dark:text-gray-200 font-medium mb-3" for="business_location">Where is your business situated?</label>
+                            <select class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:outline-none" id="business_location" name="business_location"> 
+                                <option>Enter your business location</option>
+                            </select>
+                        </div>
+
+
+
+
+                    </div>
+                        
+                                
+                    <div class="flex w-full my-4">
+                        <a href="index.html" class="h-[50px] py-2 px-4  bg-secondary hover:bg-primary focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded flex items-center justify-center ">
+                            I'm good to go
+                        </a>
+                    </div>
+                </form>
+                                
+            </div>
+            </div>
+
+    </div>
+
+    
+</body>
+</html>
