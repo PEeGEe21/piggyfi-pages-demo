@@ -3,6 +3,8 @@ html, body{
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
+    background: rgba(245, 245, 246, 0.6);
+
 }
 
 .index{
@@ -71,6 +73,10 @@ nav .menu-item.active::before{
     opacity: 1;
 }
 
+nav .menu-item.active{
+    color: #6E65D9;
+}
+
 nav .menu-item::before{
     opacity: 0;
     transition: all 300ms ease-in;
@@ -101,3 +107,30 @@ nav .menu-item span{
 
 
 }
+
+
+
+.progress-ring__circle {
+    transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%,
+  }
+
+
+  nav.invoice-tab .active{
+    border: none;
+    border-bottom: 3px #6E65D9 solid;
+    color: #6E65D9;
+    background: #F1F0FB;
+    
+    /* padding: 30px; */
+  }
+
+  nav.invoice-tab a:hover{
+    border: none;
+    border-bottom: 3px #6E65D9 solid;
+    color: #6E65D9;
+    background: #F1F0FB;
+    
+    /* padding: 30px; */
+  }
