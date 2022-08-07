@@ -14,6 +14,10 @@ tailwind.config = {
             neutral600: '#6F6E83',
             neutral700: '#4A4957',
             neutral800: '#25252C',
+            errorRed50: '#FEF2F2',
+            errorRed600: '#DC2626',
+            successGreen50: '#ECFDF5',
+            successGreen600: '#059669',
             
 
         }
@@ -42,7 +46,5 @@ tailwind.config = {
 // background: #FBCC5C;
 
 
-    // $(document).ready(function(){
-        
-    // })
+    
     
