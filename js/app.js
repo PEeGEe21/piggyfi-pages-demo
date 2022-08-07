@@ -9,9 +9,12 @@ tailwind.config = {
             tertiary: '#C6A538',
             border_cl: '#F5F5F6',
             gray_cl: '#9998A9',
+            neutral50: '#F9FAFB',
             neutral100: '#E6E5EA',
+            neutral600: '#6F6E83',
             neutral700: '#4A4957',
-            neutral700: '#4A4957',
+            neutral800: '#25252C',
+            
 
         }
         }
