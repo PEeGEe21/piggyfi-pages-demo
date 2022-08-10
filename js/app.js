@@ -4,6 +4,7 @@ tailwind.config = {
         colors: {
             primary: '#000042',
             secondary: '#6E65D9',
+            theme: '#FF92AE',
             secondary50: '#F1F0FB',
             secondary500: '#F7CE46',
             tertiary: '#C6A538',

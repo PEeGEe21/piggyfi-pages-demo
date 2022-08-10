@@ -10,6 +10,10 @@ body {
     sans-serif;
 }
 
+.header{
+  z-index: 10001 !important;
+}
+
 .mobile-menu-btn {
   background: transparent;
   border: none;
@@ -78,11 +82,11 @@ body {
     0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px -1px rgba(0, 0, 0, 0.05);
 }
 
-@media (min-width: 993px) {
+/* @media (min-width: 993px) {
   .sidebar {
     display: block;
   }
-}
+} */
 
 .sidebar {
   top: 0;
@@ -97,6 +101,14 @@ body {
   /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px -1px rgba(0, 0, 0, 0.05); */
 }
 
+.sidebar.open {
+  /* display: block; */
+  transform: translateX(100%);
+  top: 80px;
+  width: 50%;
+
+}
+
 .main {
   margin-left: 300px;
   background: #fff;
@@ -104,7 +116,8 @@ body {
 }
 @media only screen and (max-width: 993px) {
   .sidebar {
-    display: none;
+    /* display: none; */
+    transform: translateX(-100%);
   }
   .main {
     margin-left: 0px;
@@ -127,6 +140,7 @@ body {
 .menu-item {
   position: relative;
   font-size: 16px !important ;
+  text-transform: capitalize !important;
 }
 /* .menu-item span{
   position: relative;
@@ -223,4 +237,9 @@ nav.invoice-tab a:hover {
 
 .book-detail-table li span:first-child::after {
   content: ':';
+}
+
+
+.shadow-box{
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px rgba(50, 50, 71, 0.05);
 }
