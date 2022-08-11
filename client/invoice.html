@@ -20,7 +20,7 @@
 
 </head>
 <body>
-            <div class="">
+            <div class="client-invoices">
                 <div class="sidebar text-gray-700 shadow">
                     <div class="relative h-full">
                         <div class="flex items-center justify-center relative py-8 gap-4 border-b border-border_cl ">
@@ -66,7 +66,7 @@
                                 <span class="text-secondary underline">Kindly drop a review</span>
                             </a>
 
-                            <div class="mt-7">
+                            <div class="mt-7 mb-5">
                                 <p class="flex flex-col gap-1 items-center justify-center text-sm">Don't have an account? <a href="../signup.html" class="text-secondary underline ">Create an account</a></p>
                             </div>
                         </div>
@@ -413,20 +413,35 @@
 
                 <!-- The dialog -->
                 <div id="step_1"
-                class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
+                class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96  md:w-[40em] max-w-lg bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
                     <div class="">
             
-                    
-                        <h1 class="text-2xl font-semibold">Dialog Title</h1>
-                        <div class="py-5 border-t border-b border-gray-300">
-                            <p>Welcome to KindaCode.com. Hope you will find something useful. Have a nice day and happy coding</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex blanditiis sunt voluptas! Repellendus excepturi vel earum! Accusamus omnis sequi doloremque laudantium deserunt, aut illum exercitationem porro! Laudantium esse nemo minima voluptates est hic, facilis aperiam at modi repudiandae ipsam tempora harum totam tempore laborum? Modi neque soluta aperiam, nihil unde laboriosam ut numquam est adipisci? Aperiam, incidunt ratione officiis culpa a veniam quo, quidem porro eveniet, nesciunt vitae! Inventore obcaecati nulla modi dolorum quis reiciendis molestiae perferendis consequatur accusamus! Necessitatibus officiis iste sint, hic unde odit iusto eius exercitationem, doloremque dolorum voluptas soluta asperiores beatae saepe omnis. Ducimus, magni molestiae!</p>
+                    <div class="flex items-start justify-between mb-5">
+
+                        <div class="grow">
+                            <h1 class="text-xl font-semibold">Select wallet</h1>
+                            <p class="text-neutral600 text-base">Kindly select a wallet to make payment </p>
                         </div>
+
+                        
+                        <button class="btn btn-sm btn-label-brand btn-bold flex items-start" id="close">
+                                            
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L5 15M5 5L15 15" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                        <div class="py-5  w-full flex gap-4">
+                            <button class="w-1/2 border border-gray-300 py-4 h-15 flex items-center justify-center rounded focus:outline-none">
+                                <img src="../images/Image.png" alt="" class="mr-2"> MetaMask
+                            </button>
+                            <button class="w-1/2 border border-gray-300 py-4 h-15 flex items-center justify-center rounded focus:outline-none">
+                                <img src="../images/Celo.png" alt="" class="mr-2"> Celo Wallet
+                            </button>
+                        </div>
+                        
                         <div class="flex justify-end">
                             <!-- This button is used to close the dialog -->
-                            <button id="close" class="close px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
-                                Close
-                            </button>
                             <button id="next" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
                                 Next
                             </button>
