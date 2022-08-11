@@ -18,7 +18,9 @@ tailwind.config = {
             errorRed50: '#FEF2F2',
             errorRed600: '#DC2626',
             successGreen50: '#ECFDF5',
+            successGreen500: '#10B981',
             successGreen600: '#059669',
+            
             
 
         }

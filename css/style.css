@@ -115,23 +115,35 @@ body {
 .sidebar {
   top: 0;
   /* display: none; */
-
+  /* left: 0; */
   height: 100%;
   width: 300px;
   background-color: #fff;
   position: fixed !important;
   z-index: 1;
   overflow: auto;
+  transition: all 300ms  ease-out;
+  
+
+
+  /* transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1); */
+
   /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px -1px rgba(0, 0, 0, 0.05); */
 }
 
 .sidebar.open {
   display: block;
   /* transform: translateX(100%);*/
+  /* transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1); */
+  transition: all 300ms  ease;
+
+  /* left: 0; */
   top: 80px;
   width: 70%; 
 
 }
+
+
 
 .main {
   margin-left: 300px;
@@ -139,8 +151,15 @@ body {
   height: 100%;
 }
 @media only screen and (max-width: 993px) {
+  .client-invoices .sidebar.open {
+  
+    /* left: 0; */
+    top: 20px;
+  
+  }
   .sidebar {
     display: none;
+    /* left: -300px; */
     /* transform: translateX(-100%); */
   }
   .main {
@@ -266,4 +285,22 @@ nav.invoice-tab a:hover {
 
 .shadow-box{
   box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px rgba(50, 50, 71, 0.05);
+}
+
+
+
+/* client */
+
+.client .main{
+  margin: 0;
+  background: rgba(245, 245, 246, 0.6);
+}
+.dialog.fade{
+  /* transition: opacity 0.15s linear;
+  opacity: 1; */
+}
+
+.dialog{
+  /* transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  opacity: 0; */
 }
