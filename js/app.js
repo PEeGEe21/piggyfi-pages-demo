@@ -15,6 +15,7 @@ tailwind.config = {
             neutral600: '#6F6E83',
             neutral700: '#4A4957',
             neutral800: '#25252C',
+            neutral900: '#121216',
             errorRed50: '#FEF2F2',
             errorRed600: '#DC2626',
             successGreen50: '#ECFDF5',
