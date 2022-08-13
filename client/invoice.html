@@ -399,7 +399,7 @@
 
 
 
-                        <div class="dropdown relative" data-dropdown>
+                        <!-- <div class="dropdown relative" data-dropdown>
                             <button class="btn btn-secondary dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-dropdown-btn data-toggle-icon="true">
                                 Dropdown button
                             </button>
@@ -408,10 +408,10 @@
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#" data-toggle="kt-tooltip" title="" data-placement="left" data-original-title="Tooltip title">Something else here</a>
                             </div>
-                        </div>
+                        </div> -->
         
         
-                        <div class="dropdown relative" data-dropdown>
+                        <!-- <div class="dropdown relative" data-dropdown>
                             <button class="btn btn-brand dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-dropdown-btn data-toggle-icon="true">
                                 Dropdown button
                             </button>
@@ -420,7 +420,7 @@
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
-                        </div>
+                        </div> -->
                                     </div>
                             </div>
 
@@ -465,7 +465,7 @@
 
                     </div>
                         <div class="py-5  w-full flex gap-4">
-                            <button class="w-1/2 border border-gray-300 py-4 h-15 flex items-center justify-center rounded focus:outline-none">
+                            <button class="w-1/2 border border-gray-300 py-4 h-15 flex items-center justify-center rounded focus:outline-none"  id="next">
                                 <img src="../images/Image.png" alt="" class="mr-2"> MetaMask
                             </button>
                             <button class="w-1/2 border border-gray-300 py-4 h-15 flex items-center justify-center rounded focus:outline-none">
@@ -473,12 +473,11 @@
                             </button>
                         </div>
                         
-                        <div class="flex justify-end">
-                            <!-- This button is used to close the dialog -->
-                            <button id="next" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
+                        <!-- <div class="flex justify-end">
+                            <button class="px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
                                 Next
                             </button>
-                        </div>
+                        </div> -->
 
                         
                     </div>
@@ -489,19 +488,69 @@
                 <div id="step_2"
                 class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
                     <div class="">
-            
-                    
-                        <h1 class="text-2xl font-semibold">Dialog Title 222</h1>
-                        <div class="py-5 border-t border-b border-gray-300">
-                            <p>Welcome to KindaCode.com. Hope you will find something useful. Have a nice day and happy coding</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex blanditiis sunt voluptas! Repellendus excepturi vel earum! Accusamus omnis sequi doloremque laudantium deserunt, aut illum exercitationem porro! Laudantium esse nemo minima voluptates est hic, facilis aperiam at modi repudiandae ipsam tempora harum totam tempore laborum? Modi neque soluta aperiam, nihil unde laboriosam ut numquam est adipisci? Aperiam, incidunt ratione officiis culpa a veniam quo, quidem porro eveniet, nesciunt vitae! Inventore obcaecati nulla modi dolorum quis reiciendis molestiae perferendis consequatur accusamus! Necessitatibus officiis iste sint, hic unde odit iusto eius exercitationem, doloremque dolorum voluptas soluta asperiores beatae saepe omnis. Ducimus, magni molestiae!</p>
+
+                        <div class="modal-header flex items-center justify-end gap-2">
+                            
+                            <img src="../images/Image (2).png"/>
+                            <span class="mr-4 ml-2 text-primary text-sm">Wallet connected</span>
+
+                            <button id="closeButtonStepTwo" class="p-2">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.3461 0.186523C8.01273 0.186523 9.36866 1.54245 9.36866 3.20908V3.84412C9.36866 4.1262 9.13972 4.35514 8.85763 4.35514C8.57554 4.35514 8.3466 4.1262 8.3466 3.84412V3.20908C8.3466 2.10526 7.44924 1.20858 6.3461 1.20858H3.02442C1.92264 1.20858 1.02596 2.10526 1.02596 3.20908V10.792C1.02596 11.8952 1.92264 12.7919 3.02442 12.7919H6.35359C7.45196 12.7919 8.3466 11.8979 8.3466 10.7995V10.157C8.3466 9.87492 8.57554 9.64598 8.85763 9.64598C9.13972 9.64598 9.36866 9.87492 9.36866 10.157V10.7995C9.36866 12.4621 8.01545 13.8139 6.35359 13.8139H3.02442C1.35915 13.8139 0.00390625 12.4587 0.00390625 10.792V3.20908C0.00390625 1.54245 1.35915 0.186523 3.02442 0.186523H6.3461ZM11.8516 4.65222L13.8467 6.63842C13.8645 6.65608 13.8804 6.67444 13.895 6.69387L13.8467 6.63842C13.8708 6.66222 13.8923 6.68822 13.9109 6.71596C13.9191 6.72852 13.927 6.74152 13.9344 6.75487C13.9403 6.76531 13.9458 6.7762 13.9509 6.78727C13.9552 6.79705 13.9593 6.80684 13.9631 6.81678C13.9683 6.82973 13.9727 6.84304 13.9767 6.85653C13.9797 6.86715 13.9824 6.87775 13.9848 6.88848C13.9878 6.90149 13.9902 6.91459 13.9921 6.92778C13.9932 6.93636 13.9942 6.94535 13.995 6.95441C13.9966 6.96995 13.9973 6.98505 13.9973 7.00022L13.9938 7.04247L13.9924 7.06954C13.9922 7.07069 13.9921 7.07185 13.9919 7.073L13.9973 7.00022C13.9973 7.03805 13.9931 7.0755 13.9849 7.11191C13.9824 7.12269 13.9797 7.13329 13.9766 7.14376C13.9727 7.15741 13.9683 7.17072 13.9632 7.18382C13.9593 7.19361 13.9552 7.20339 13.9507 7.21302C13.9458 7.22425 13.9403 7.23514 13.9344 7.24583C13.927 7.25893 13.9191 7.27192 13.9107 7.28452C13.9059 7.29199 13.9006 7.29936 13.8952 7.3066C13.879 7.32795 13.8613 7.34803 13.8422 7.36662L11.8516 9.3489C11.7522 9.44839 11.6213 9.49813 11.4912 9.49813C11.3604 9.49813 11.2289 9.44839 11.1294 9.34754C10.9304 9.14722 10.9311 8.82425 11.1307 8.62529L12.2481 7.51125H5.28166C4.99958 7.51125 4.77063 7.28231 4.77063 7.00022C4.77063 6.71814 4.99958 6.4892 5.28166 6.4892H12.2495L11.1307 5.37584C10.9311 5.17688 10.9297 4.85391 11.1294 4.65358C11.3283 4.45326 11.6513 4.45326 11.8516 4.65222Z" fill="#0A026A"/>
+                                </svg>
+                            </button>
+                            
                         </div>
-                        <div class="flex justify-end">
-                            <!-- This button is used to close the dialog -->
-                            <button id="closeButtonStepTwo" class=" close px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
+                        <div class="flex items-center flex-col justify-center gap-2 my-4">
+                            <h1 class="text-lg font-semibold text-neutral800">You would pay</h1>
+                            <div class="flex items-center gap-2">
+                                <img src="../images/Celo2-form.png"/>
+                                <span class="text-neutral700 font-bold text-2xl ">100.01</span>
+                            </div>
+                            <span class="text-neutral600 text-[15px]">$1.00 = celo 1.00</span>
+                        </div>
+
+                        
+            
+                        <div class="flex flex-col gap-3 my-4 py-4">
+                            <div class="flex  justify-between items-end text-neutral600">
+                                <span>Transaction fee :</span>
+                                <span>$0.01</span>
+                            </div>
+                            <div class="flex  justify-between items-start text-neutral600">
+                                <span>Celo Network fee :</span>
+                                <span>0.000013 celo  ~ $0.00</span>
+                            </div>
+                            <div class="flex  justify-between items-end text-neutral600">
+                                <span>Total fee :</span>
+                                <span>$0.01</span>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="my-4 py-4">
+                                    <label>Note:</label>
+                                    <div class="w-full">
+                                        <textarea class="w-full border border-neutral100 focus:outline-none active:outline-none p-3 textarea" placeholder="Leave a note for your client"></textarea>
+                                    </div>
+                            </div>
+
+                            <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center"  >Make Payment</button>
+
+                            
+
+
+                            
+                        </div>
+                    
+                        
+                        
+                        <!-- <div class="flex justify-end">
+                            <button  class=" close px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
                                 Close
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
