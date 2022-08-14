@@ -446,7 +446,10 @@ nav.invoice-tab a:hover {
   background-color: transparent;
 }
 
-.show .dropdown-menu {
+.show .dropdown-menu{
+  display: block;
+}
+.active .dropdown-menu.large-dropdown  {
   display: block;
 }
 

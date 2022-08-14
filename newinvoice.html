@@ -281,7 +281,7 @@
                                                 <p class="text-neutral600 text-sm">RebeccaWilson@gmail.com</p>
                                             </div>
 
-                                            <button class="text-secondary text-sm">edit</button>
+                                            <button class="text-secondary text-sm" id="personal_info">edit</button>
                                             
                                         </div>
                                         
@@ -291,7 +291,7 @@
 
                                             <span class="text-neutral600 ">To</span>
 
-                                            <button class="text-sm text-secondary flex items-center">
+                                            <button class="text-sm text-secondary flex items-center" id="newClient">
                                                 <span class="mr-2">
                                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M8.5 3.33325V12.6666" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -320,10 +320,10 @@
                                                 </option>
                                             </select>
                                         </div> -->
-                                        <div class="   grow  ">
-                                                <button class="w-full bg-white h-12 focus:outline-none active:outline-none  flex items-center justify-between border border-gray_cl px-4 py-3 mt-2 rounded-lg" id="">
-                                                    <span>Select your client</span>
-                                                    <span>
+                                        <div class=" dropdown relative  grow large-dropdown  " data-large-dropdown >
+                                                <button class="w-full bg-white h-12 focus:outline-none active:outline-none  flex items-center justify-between border border-neutral100 focus:border-gray_cl active:border-gray_cl px-4 py-3 mt-2 rounded-lg" id="" data-large-dropdown-btn >
+                                                    <span class="pointer-events-none text-neutral600">Select your client</span>
+                                                    <span class="pointer-events-none ">
                                                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-3 ml-2" role="img" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             
                                                                 <path d="M8.00099 11.7C7.53432 11.7 7.06766 11.5201 6.71432 11.1667L2.36766 6.82005C2.17432 6.62672 2.17432 6.30672 2.36766 6.11338C2.56099 5.92005 2.88099 5.92005 3.07432 6.11338L7.42099 10.4601C7.74099 10.7801 8.26099 10.7801 8.58099 10.4601L12.9277 6.11338C13.121 5.92005 13.441 5.92005 13.6343 6.11338C13.8277 6.30672 13.8277 6.62672 13.6343 6.82005L9.28766 11.1667C8.93432 11.5201 8.46766 11.7 8.00099 11.7Z" fill="currentColor"></path>
@@ -331,7 +331,7 @@
                                                     </span>
                                                 </button>
 
-                                                <div class="px-3 py-3 shadow-box rounded-md">
+                                                <div class="dropdown-menu large-dropdown px-3 py-3 shadow-box rounded-md">
                                                     
                                                         <div class="relative rounded-full  items-center flex w-full h-12 my-2 ">
                                                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none h-full">
@@ -411,10 +411,10 @@
 
                                             <span class="text-neutral600 ">How do you want to get paid?</span>
 
-                                            <div class="   grow  ">
-                                                <button class="w-full bg-white h-12 focus:outline-none active:outline-none flex items-center justify-between border border-gray_cl px-4 py-3 mt-2 rounded-lg" id="">
-                                                    <span>Choose the currency you want to get paid</span>
-                                                    <span>
+                                            <div class="dropdown relative  grow  " data-large-dropdown>
+                                                <button class="w-full bg-white h-12 focus:outline-none active:outline-none flex items-center justify-between border border-neutral100 focus:border-gray_cl active:border-gray_cl px-4 py-3 mt-2 rounded-lg" id="" data-large-dropdown-btn>
+                                                    <span class="pointer-events-none text-neutral600">Choose the currency you want to get paid</span>
+                                                    <span class="pointer-events-none">
                                                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-3 ml-2" role="img" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             
                                                                 <path d="M8.00099 11.7C7.53432 11.7 7.06766 11.5201 6.71432 11.1667L2.36766 6.82005C2.17432 6.62672 2.17432 6.30672 2.36766 6.11338C2.56099 5.92005 2.88099 5.92005 3.07432 6.11338L7.42099 10.4601C7.74099 10.7801 8.26099 10.7801 8.58099 10.4601L12.9277 6.11338C13.121 5.92005 13.441 5.92005 13.6343 6.11338C13.8277 6.30672 13.8277 6.62672 13.6343 6.82005L9.28766 11.1667C8.93432 11.5201 8.46766 11.7 8.00099 11.7Z" fill="currentColor"></path>
@@ -422,7 +422,7 @@
                                                     </span>
                                                 </button>
 
-                                                <div class="px-3 py-3 shadow-box rounded-md mt-2 ">
+                                                <div class=" dropdown-menu large-dropdown px-3 py-3 shadow-box rounded-md ">
                                                     
                                                         <div class="relative rounded-full  items-center flex w-full h-12 my-2 ">
                                                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none h-full">
@@ -433,7 +433,7 @@
                                                                         </svg>
                                                                 </span>
                                                             </div>
-                                                            <input type="text" name="price" id="price" class="border border-gray-300 py-2 px-4  block w-full pl-12 pr-12 sm:text-sm rounded-full h-full focus:outline-none focus:border-gray-400" placeholder="search currency"/>
+                                                            <input type="text" name="price" id="price" class="border border-gray-300 py-2 px-4  block w-full pl-12 pr-12 sm:text-sm rounded-full h-full focus:outline-none focus:border-gray-400" placeholder="search currency" autocomplete="off"/>
                                                             
                                                         </div>
                                                         <div class="mt-3 py-4">
@@ -780,18 +780,25 @@
 
 
                     <!-- DROPDOWN FORMS & MODALS -->
+
+                    <!-- Overlay element -->
+                    <div id="overlay" class="fixed hidden z-[90] w-screen h-screen inset-0 bg-neutral800 bg-opacity-80"></div>
                     
-                        <div id="personal_form" class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg md:max-w-xl bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
+                        <div id="personalInfoModal" class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg md:max-w-xl bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
                             <div class="">
 
                                 <div class="modal-header flex items-center justify-between pb-5">
                                     
                                     <span class=" text-primary text-xl">Personal Information</span>
 
-                                    <button id="closeButtonStepTwo" class="p-2">
+                                    <button id="closeButton" class="p-2">
+                                        <span class="pointer-events-none">
+
+                                        
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15 5L5 15M5 5L15 15" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
+                                        </span>
                                     </button>
                                     
                                 </div>
@@ -853,10 +860,13 @@
                                     
                                     <span class=" text-primary text-xl">Add your client</span>
 
-                                    <button id="closeButtonStepTwo" class="p-2">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <button id="closeButton" class="p-2">
+                                        <span class="pointer-events-none">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15 5L5 15M5 5L15 15" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
+                                        </span>
+                                        
                                     </button>
                                     
                                 </div>
