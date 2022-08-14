@@ -12,6 +12,7 @@
   />
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link rel="stylesheet" href="vendors/select2/dist/css/select2.css">
     
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -266,8 +267,6 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        
-                                      
                                     </div>
                                 </div>
 
@@ -302,17 +301,99 @@
                                                 add new client
                                             </button>
                                         </div>
-                                        <div class="border border-gray_cl px-4 py-3 mt-2 flex items-center rounded-lg">
-                                            <div class="grow">
-                                                <select class="w-full bg-white focus:outline-none active:outline-none focus:border-0 active:border-0">
+                                        <!-- <div class=" mt-2 flex items-center rounded-lg grow h-12 border border-gray_cl px-4 py-3 ">
+                                
+                                                <select class="w-full bg-white focus:outline-none active:outline-none focus:border-0 active:border-0 border-0 px-4 py-3" id="clientList">
+                                                    <option value="">Select your client</option>
                                                     <option>
-                                                        
-                                                    </option>
-                                                    <option>
-                                                        hiii
+                                                        Oluwafemi Alofe
                                                     </option>
                                                 </select>
-                                            </div>
+                                        </div> -->
+                                        <!-- <div class=" mt-2 flex items-center rounded-lg grow h-12 border border-gray_cl px-4 py-3 ">
+                                            <select class="w-full bg-white focus:outline-none active:outline-none focus:border-0 active:border-0 border-0" id="">
+                                                <option value="">Select your client</option>
+                                                <option class="flex items-center justify-between">
+                                                    <span>Oluwafemi Alofe</span>
+                                                    <span>O</span>
+                                                    
+                                                </option>
+                                            </select>
+                                        </div> -->
+                                        <div class="   grow  ">
+                                                <button class="w-full bg-white h-12 focus:outline-none active:outline-none  flex items-center justify-between border border-gray_cl px-4 py-3 mt-2 rounded-lg" id="">
+                                                    <span>Select your client</span>
+                                                    <span>
+                                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-3 ml-2" role="img" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            
+                                                                <path d="M8.00099 11.7C7.53432 11.7 7.06766 11.5201 6.71432 11.1667L2.36766 6.82005C2.17432 6.62672 2.17432 6.30672 2.36766 6.11338C2.56099 5.92005 2.88099 5.92005 3.07432 6.11338L7.42099 10.4601C7.74099 10.7801 8.26099 10.7801 8.58099 10.4601L12.9277 6.11338C13.121 5.92005 13.441 5.92005 13.6343 6.11338C13.8277 6.30672 13.8277 6.62672 13.6343 6.82005L9.28766 11.1667C8.93432 11.5201 8.46766 11.7 8.00099 11.7Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+
+                                                <div class="px-3 py-3 shadow-box rounded-md">
+                                                    
+                                                        <div class="relative rounded-full  items-center flex w-full h-12 my-2 ">
+                                                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none h-full">
+                                                                <span class="text-gray-500 px-3">
+                                                                    <svg width="22" height="22" viewBox="0 0 20 20" class="mr-3 pr-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#9998A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M17.5 17.5L13.875 13.875" stroke="#9998A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                </span>
+                                                            </div>
+                                                            <input type="text" name="price" id="price" class="border border-gray-300 py-2 px-4  block w-full pl-12 pr-12 sm:text-sm rounded-full h-full focus:outline-none focus:border-gray-400" placeholder="search clients"/>
+                                                            
+                                                        </div>
+                                                        <div class="mt-3 py-4">
+                                                            <button class="flex justify-between items-center w-full border border-gray_cl py-2 px-2 text-neutral600 rounded-md hover:bg-gray-100">
+                                                                <div class="flex gap-2 items-center">
+                                                                    <span>
+                                                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M12.3346 1L5.0013 8.33333L1.66797 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+
+                                                                    <span>Oluwafemi Alofe</span>
+                                                                </div>
+                                                                
+                                                                <div class="dropdown relative" data-dropdown>
+                                                                    <span class="btn btn-sm btn-label-brand btn-bold flex items-center mx-auto dropdown-toggle cursor-pointer" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-dropdown-btn >
+                                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none	">
+                                                                            <path d="M7.66667 4.33333C8.03486 4.33333 8.33333 4.03486 8.33333 3.66667C8.33333 3.29848 8.03486 3 7.66667 3C7.29848 3 7 3.29848 7 3.66667C7 4.03486 7.29848 4.33333 7.66667 4.33333Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                            <path d="M7.66667 8.66683C8.03486 8.66683 8.33333 8.36835 8.33333 8.00016C8.33333 7.63197 8.03486 7.3335 7.66667 7.3335C7.29848 7.3335 7 7.63197 7 8.00016C7 8.36835 7.29848 8.66683 7.66667 8.66683Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                            <path d="M7.66667 12.9998C8.03486 12.9998 8.33333 12.7014 8.33333 12.3332C8.33333 11.965 8.03486 11.6665 7.66667 11.6665C7.29848 11.6665 7 11.965 7 12.3332C7 12.7014 7.29848 12.9998 7.66667 12.9998Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                        
+                                                                    </span>
+                        
+                                                                        <div class="dropdown-menu border-0 py-3 z-50 min-w-0 bg-neutral50" aria-labelledby="dropdownMenuButton" >
+                                                                            <a class="dropdown-item flex items-center text-xs gap-2 py-2 text-neutral800 " href="#">
+                                                                                <span>
+                                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path d="M10.5 2.99023C8.835 2.82523 7.16 2.74023 5.49 2.74023C4.5 2.74023 3.51 2.79023 2.52 2.89023L1.5 2.99023" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                        <path d="M4.25 2.485L4.36 1.83C4.44 1.355 4.5 1 5.345 1H6.655C7.5 1 7.565 1.375 7.64 1.835L7.75 2.485" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                        <path d="M9.42422 4.56982L9.09922 9.60482C9.04422 10.3898 8.99922 10.9998 7.60422 10.9998H4.39422C2.99922 10.9998 2.95422 10.3898 2.89922 9.60482L2.57422 4.56982" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                        <path d="M5.16406 8.25H6.82906" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                        <path d="M4.75 6.25H7.25" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                    </svg>
+                                                                                </span> Delete
+                                                                            </a>
+                                                                            <a class="dropdown-item flex items-center text-xs gap-2 text-neutral800  py-2" href="#">
+                                                                                <span>
+                                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path d="M6.63164 1.80011L2.52663 6.14511C2.37163 6.31011 2.22163 6.63511 2.19163 6.86011L2.00663 8.48011C1.94163 9.06511 2.36163 9.46511 2.94163 9.36511L4.55164 9.09011C4.77664 9.05011 5.09163 8.88511 5.24663 8.71511L9.35164 4.37011C10.0616 3.62011 10.3816 2.76511 9.27664 1.72011C8.17663 0.685108 7.34164 1.05011 6.63164 1.80011Z" stroke="#25252C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                        <path d="M5.94531 2.5249C6.16031 3.9049 7.28031 4.9599 8.67031 5.0999" stroke="#25252C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                        <path d="M1.5 11H10.5" stroke="#25252C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                        </svg>
+                                                                                </span> Edit
+                                                                            </a>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                            </button>
+                                                        </div>
+                                                </div>
 
                                             
                                         </div>
@@ -323,16 +404,93 @@
 
 
                                 <div class="my-10 border-0 border-neutral100">
-
-                                
                                     <div class="flex items-center justify-between  flex-wrap   pb-12">
                                         
                                         <div class="mt-5 md:mt-0 w-full md:w-1/3">
                                             
 
-                                                <span class="text-neutral600 ">How do you want to get paid?</span>
+                                            <span class="text-neutral600 ">How do you want to get paid?</span>
 
-                                            <div class="border border-gray_cl px-4 py-3 mt-2 flex items-center rounded-lg">
+                                            <div class="   grow  ">
+                                                <button class="w-full bg-white h-12 focus:outline-none active:outline-none flex items-center justify-between border border-gray_cl px-4 py-3 mt-2 rounded-lg" id="">
+                                                    <span>Choose the currency you want to get paid</span>
+                                                    <span>
+                                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-3 ml-2" role="img" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            
+                                                                <path d="M8.00099 11.7C7.53432 11.7 7.06766 11.5201 6.71432 11.1667L2.36766 6.82005C2.17432 6.62672 2.17432 6.30672 2.36766 6.11338C2.56099 5.92005 2.88099 5.92005 3.07432 6.11338L7.42099 10.4601C7.74099 10.7801 8.26099 10.7801 8.58099 10.4601L12.9277 6.11338C13.121 5.92005 13.441 5.92005 13.6343 6.11338C13.8277 6.30672 13.8277 6.62672 13.6343 6.82005L9.28766 11.1667C8.93432 11.5201 8.46766 11.7 8.00099 11.7Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+
+                                                <div class="px-3 py-3 shadow-box rounded-md mt-2 ">
+                                                    
+                                                        <div class="relative rounded-full  items-center flex w-full h-12 my-2 ">
+                                                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none h-full">
+                                                                <span class="text-gray-500 px-3">
+                                                                    <svg width="22" height="22" viewBox="0 0 20 20" class="mr-3 pr-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#9998A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M17.5 17.5L13.875 13.875" stroke="#9998A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                </span>
+                                                            </div>
+                                                            <input type="text" name="price" id="price" class="border border-gray-300 py-2 px-4  block w-full pl-12 pr-12 sm:text-sm rounded-full h-full focus:outline-none focus:border-gray-400" placeholder="search currency"/>
+                                                            
+                                                        </div>
+                                                        <div class="mt-3 py-4">
+                                                            <button class="flex items-start mb-3 py-2 px-1 text-sm justify-between bg-white border-0 rounded-lg w-full hover:bg-gray-100">
+                                                                <div class="flex items-center justify-start gap-2 pr-2">
+                                                                         <img src="images/Celo Dollar (CUSD).png">   
+                                                                </div>
+                                                                <div class="flex grow flex-col justify-start items-start text-left">
+                                                                        <p class="text-neutral700 font-normal text-base">cReal</p>
+                                                                        <p class="text-neutral600 font-thin text-sm">$1 = 1cUSD</p>
+                                                                </div>
+                                                            </button>
+                                                            <button class="flex items-start mb-3 py-2 px-1 hover:bg-gray-100 text-sm justify-between bg-white border-0 rounded-lg w-full ">
+                                                                <div class="flex items-center justify-start gap-2 pr-2">
+                                                                <img src="images/Celo (CELO)__21.png">
+                                                            </div>
+                                                                <div class="flex grow flex-col justify-start items-start text-left">
+                                                                        <p class="text-neutral700 font-normal text-base">cReal</p>
+                                                                        <p class="text-neutral600 font-thin text-sm">$1 = 1cUSD</p>
+                                                                </div>
+                                                            </button>
+                                                            <button class="flex items-start mb-3 py-2 px-1 hover:bg-gray-100 text-sm justify-between bg-white border-0 rounded-lg w-full ">
+                                                                <div class="flex items-center justify-start gap-2 pr-2">
+                                                                    <img src="images/cEUR 1.png">
+                                                                </div>
+                                                                <div class="flex grow flex-col justify-start items-start text-left">
+                                                                        <p class="text-neutral700 font-normal text-base">cReal</p>
+                                                                        <p class="text-neutral600 font-thin text-sm">$1 = 1cUSD</p>
+                                                                </div>
+                                                            </button>
+                                                            <button class="flex items-start py-2 px-1 hover:bg-gray-100 text-sm justify-between bg-white border-0 rounded-lg w-full ">
+                                                                <div class="flex items-center justify-start gap-2 pr-2">
+                                                                    <img src="images/cREAL 1.png">
+                                                                </div>
+                                                                <div class="flex grow flex-col justify-start items-start text-left">
+                                                                        <p class="text-neutral700 font-normal text-base">cReal</p>
+                                                                        <p class="text-neutral600 font-thin text-sm">$1 = 1cUSD</p>
+                                                                </div>
+                                                            </button>
+                                                                <!-- <img src="images/cEUR 1.png"> -->
+                                                            <!-- <button class="flex justify-between items-center w-full">
+                                                               
+                                                                <span class="btn btn-sm btn-label-brand btn-bold flex items-start">
+                                        
+                                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.66667 4.33333C8.03486 4.33333 8.33333 4.03486 8.33333 3.66667C8.33333 3.29848 8.03486 3 7.66667 3C7.29848 3 7 3.29848 7 3.66667C7 4.03486 7.29848 4.33333 7.66667 4.33333Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M7.66667 8.66683C8.03486 8.66683 8.33333 8.36835 8.33333 8.00016C8.33333 7.63197 8.03486 7.3335 7.66667 7.3335C7.29848 7.3335 7 7.63197 7 8.00016C7 8.36835 7.29848 8.66683 7.66667 8.66683Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M7.66667 12.9998C8.03486 12.9998 8.33333 12.7014 8.33333 12.3332C8.33333 11.965 8.03486 11.6665 7.66667 11.6665C7.29848 11.6665 7 11.965 7 12.3332C7 12.7014 7.29848 12.9998 7.66667 12.9998Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                                                            </button> -->
+                                                        </div>
+                                                </div>
+
+                                            
+                                        </div>
+                                            <!-- <div class="border border-gray_cl px-4 py-3 mt-2 flex items-center rounded-lg">
                                                 <div class="grow">
                                                     <select class="w-full bg-white focus:outline-none active:outline-none focus:border-0 active:border-0 text-gray_cl">
                                                         <option>
@@ -343,9 +501,7 @@
                                                         </option>
                                                     </select>
                                                 </div>
-
-                                                
-                                            </div>
+                                            </div> -->
 
                                         </div>
 
@@ -360,8 +516,6 @@
                                         </div>
                                     </div>
 
-
-
                                     <div class=" overflow-x-auto relative">
                                         <table class="min-w-full leading-normal table-auto">
                                             <div class="inline-block min-w-full table-auto">
@@ -371,12 +525,15 @@
                                                         <th scope="col" class="px-5 py-3  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal w-1/2">
                                                             Description
                                                         </th>
+
                                                         <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
                                                             Quantity
                                                         </th>
+
                                                         <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal ">
                                                             Unit Price
                                                         </th>
+
                                                         <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
                                                             Amount
                                                         </th>
@@ -391,47 +548,60 @@
                                                     <tr>
                                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                             <div class="flex items-start w-full">
-                                                                
 
-                                                                    <textarea class="w-full border border-neutral100 focus:outline-none active:outline-none p-3 textarea"></textarea>
+                                                                <textarea class="w-full border border-neutral100 focus:outline-none active:outline-none p-3 textarea"></textarea>
                                                 
                                                             </div>
                                                         </td>
                                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                             
-                                                            <!-- <p class="text-gray_cl font-normal text-sm whitespace-no-wrap"> -->
-                                                                <input type="text" class="w-full h-14 text-xl text-neutral700 text-center border border-neutral100 font-normal   focus:border-gray_cl focus:outline-none" value="1" maxlength="1" />
-                                                            <!-- </p> -->
+                                                            <input type="text" class="w-full h-14 text-xl text-neutral700 text-center border border-neutral100 font-normal focus:border-gray_cl focus:outline-none" value="1" maxlength="1" />
+
                                                         </td>
                                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                            <!-- <p class="text-gray-900 whitespace-no-wrap"> -->
-                                                                <input type="text" class="w-full h-14 text-xl text-neutral700 text-center border border-neutral100 font-normal focus:border-gray_cl focus:outline-none" value="$ 100.00" maxlength="" />
 
+                                                            <input type="text" class="w-full h-14 text-xl text-neutral700 text-center border border-neutral100 font-normal focus:border-gray_cl focus:outline-none" value="$ 100.00" maxlength="" />
 
-                                                            <!-- </p> -->
                                                         </td>
                                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                            <!-- <p class="text-gray-900 whitespace-no-wrap"> -->
-                                                                <input type="text" class="w-full h-14 text-xl text-neutral700 text-center border border-neutral100 font-normal  focus:border-gray_cl focus:outline-none" value="$ 100.00" maxlength="" />
+
+                                                            <input type="text" class="w-full h-14 text-xl text-neutral700 text-center border border-neutral100 font-normal  focus:border-gray_cl focus:outline-none" value="$ 100.00" maxlength="" />
 
 
-                                                            <!-- </p> -->
                                                         </td>
                                                         <td class="px-5 py-5 border-b  border-gray-200 bg-white text-sm">
-                                                            <div class="dropdown relative" data-dropdown>
-                                                            <span class="btn btn-sm btn-label-brand btn-bold flex items-center mx-auto dropdown-toggle px-2 cursor-pointer" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-dropdown-btn >
-                                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none	">
-                                                                    <path d="M7.66667 4.33333C8.03486 4.33333 8.33333 4.03486 8.33333 3.66667C8.33333 3.29848 8.03486 3 7.66667 3C7.29848 3 7 3.29848 7 3.66667C7 4.03486 7.29848 4.33333 7.66667 4.33333Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M7.66667 8.66683C8.03486 8.66683 8.33333 8.36835 8.33333 8.00016C8.33333 7.63197 8.03486 7.3335 7.66667 7.3335C7.29848 7.3335 7 7.63197 7 8.00016C7 8.36835 7.29848 8.66683 7.66667 8.66683Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M7.66667 12.9998C8.03486 12.9998 8.33333 12.7014 8.33333 12.3332C8.33333 11.965 8.03486 11.6665 7.66667 11.6665C7.29848 11.6665 7 11.965 7 12.3332C7 12.7014 7.29848 12.9998 7.66667 12.9998Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>
-                                                                
-                                                            </span>
+                                                            <div class="dropdown relative z-50" data-dropdown>
+                                                                <span class="btn btn-sm btn-label-brand btn-bold flex items-center mx-auto dropdown-toggle px-2 cursor-pointer" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-dropdown-btn >
+                                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none	">
+                                                                        <path d="M7.66667 4.33333C8.03486 4.33333 8.33333 4.03486 8.33333 3.66667C8.33333 3.29848 8.03486 3 7.66667 3C7.29848 3 7 3.29848 7 3.66667C7 4.03486 7.29848 4.33333 7.66667 4.33333Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M7.66667 8.66683C8.03486 8.66683 8.33333 8.36835 8.33333 8.00016C8.33333 7.63197 8.03486 7.3335 7.66667 7.3335C7.29848 7.3335 7 7.63197 7 8.00016C7 8.36835 7.29848 8.66683 7.66667 8.66683Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M7.66667 12.9998C8.03486 12.9998 8.33333 12.7014 8.33333 12.3332C8.33333 11.965 8.03486 11.6665 7.66667 11.6665C7.29848 11.6665 7 11.965 7 12.3332C7 12.7014 7.29848 12.9998 7.66667 12.9998Z" fill="#4A4957" stroke="#4A4957" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                    
+                                                                </span>
 
-                                                                <div class="dropdown-menu z-50" aria-labelledby="dropdownMenuButton" >
-                                                                    <a class="dropdown-item" href="#" data-toggle="kt-tooltip" title="" data-placement="right" data-skin="dark" data-container="body" data-original-title="Tooltip title">Action</a>
-                                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                                    <a class="dropdown-item" href="#" data-toggle="kt-tooltip" title="" data-placement="left" data-original-title="Tooltip title">Something else here</a>
+                                                                <div class="dropdown-menu border-0 py-3 z-50 min-w-0 bg-neutral50" aria-labelledby="dropdownMenuButton" >
+                                                                    <a class="dropdown-item flex items-center text-xs gap-2 py-2 text-neutral800 " href="#">
+                                                                        <span>
+                                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M10.5 2.99023C8.835 2.82523 7.16 2.74023 5.49 2.74023C4.5 2.74023 3.51 2.79023 2.52 2.89023L1.5 2.99023" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M4.25 2.485L4.36 1.83C4.44 1.355 4.5 1 5.345 1H6.655C7.5 1 7.565 1.375 7.64 1.835L7.75 2.485" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M9.42422 4.56982L9.09922 9.60482C9.04422 10.3898 8.99922 10.9998 7.60422 10.9998H4.39422C2.99922 10.9998 2.95422 10.3898 2.89922 9.60482L2.57422 4.56982" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M5.16406 8.25H6.82906" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M4.75 6.25H7.25" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </span> Delete
+                                                                    </a>
+                                                                    <a class="dropdown-item flex items-center text-xs gap-2 text-neutral800  py-2" href="#">
+                                                                        <span>
+                                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.63164 1.80011L2.52663 6.14511C2.37163 6.31011 2.22163 6.63511 2.19163 6.86011L2.00663 8.48011C1.94163 9.06511 2.36163 9.46511 2.94163 9.36511L4.55164 9.09011C4.77664 9.05011 5.09163 8.88511 5.24663 8.71511L9.35164 4.37011C10.0616 3.62011 10.3816 2.76511 9.27664 1.72011C8.17663 0.685108 7.34164 1.05011 6.63164 1.80011Z" stroke="#25252C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M5.94531 2.5249C6.16031 3.9049 7.28031 4.9599 8.67031 5.0999" stroke="#25252C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M1.5 11H10.5" stroke="#25252C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                </svg>
+                                                                        </span> Edit
+                                                                    </a>
+                                                                    
                                                                 </div>
                                                             </div>
 
@@ -596,20 +766,170 @@
                                         </div>
                             
                                     </div>
-
-
-
                                 </div>
 
+                            </div>
+                        </div>
 
-                                
+                    </div>
 
-                                
+
+
+
+
+
+
+                    <!-- DROPDOWN FORMS & MODALS -->
+                    
+                        <div id="personal_form" class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg md:max-w-xl bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
+                            <div class="">
+
+                                <div class="modal-header flex items-center justify-between pb-5">
+                                    
+                                    <span class=" text-primary text-xl">Personal Information</span>
+
+                                    <button id="closeButtonStepTwo" class="p-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 5L5 15M5 5L15 15" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </button>
+                                    
+                                </div>
+                                <div class="mt-4">
+                                    <form>
+
+                                        <div class="flex items-center justify-between flex-col md:flex-row gap-2 w-full">
+                                            <div class="mb-6 w-full md:w-1/2">
+                                                <label class="text-gray-700 font-medium mb-3 " for="fname">First Name <span>*</span></label>
+                                                <input id="fname" type="text" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 transition duration-150 ease-in-out focus:border-gray-300 rounded-md focus:outline-none" name="fname" autocomplete="off" value="Rebecca">
+                                            </div>
+                                            <div class="mb-6 w-full md:w-1/2">
+                                                <label class="text-gray-700 font-medium mb-3" for="lname">Last Name <span>*</span></label>
+                                                <input id="lname" type="text" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 focus:border-gray-300 rounded-md focus:outline-none transition duration-150 ease-in-out" name="lname" autocomplete="off" value="Wilson">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-6">
+                                            <label class="text-gray-700 font-medium mb-3" for="company_name">Company Name</label>
+                                            <input id="company_name" type="text" placeholder="Enter your company’s name" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="company_name" autocomplete="off">
+                                        </div>
+
+                                        <div class="flex justify-between flex-col md:flex-row gap-2 ">
+                                            <div class="mb-6 ">
+                                                <label class="text-gray-700 font-medium mb-3 " for="address">Address</label>
+                                                <input id="address" type="text" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 transition duration-150 ease-in-out focus:border-gray-300 rounded-md focus:outline-none" placeholder="Enter your Address" name="address" autocomplete="off">
+                                            </div>
+
+                                            <div class="mb-6 ">
+                                                    <label class="text-gray-700 font-medium mb-3" for="lname">State</label>
+                                                    <input id="state" type="text" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 focus:border-gray-300 rounded-md focus:outline-none transition duration-150 ease-in-out" name="state" autocomplete="off" placeholder="Enter your State">
+                                            </div>
+
+                                            <div class="mb-6 ">
+                                                    <label class="text-gray-700 font-medium mb-3" for="postal_code">Postal code</label>
+                                                    <input id="postal_code" type="text" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 focus:border-gray-300 rounded-md focus:outline-none transition duration-150 ease-in-out" name="postal_code" autocomplete="off" placeholder="Enter your Postal Code">
+                                            </div>
+
+                                        </div>
+                        
+                        
+                        
+                              
+                                        <div class="flex mx-auto w-full md:w-1/2">
+                                            <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="submit" >Save</button>
+                                        </div>
+                                          
+                                    </form>
+                                </div>
                             </div>
                         </div>
 
 
-                    </div>
+                        
+                        <div id="client_form" class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg md:max-w-xl bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto max-h-full">
+                            <div class="">
+
+                                <div class="modal-header flex items-center justify-between pb-5">
+                                    
+                                    <span class=" text-primary text-xl">Add your client</span>
+
+                                    <button id="closeButtonStepTwo" class="p-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 5L5 15M5 5L15 15" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </button>
+                                    
+                                </div>
+                                <div class="mt-4">
+                                    <form>
+
+                                        
+                                        <div class="mb-6">
+                                            <label class="text-gray-700 font-medium mb-3" for="client">Who are you sending this invoice to?<span>*</span></label>
+                                            <input id="client" type="email" placeholder="Enter the email address" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="client" autocomplete="off">
+                                            
+                                        </div>
+                                        <div class="mb-6">
+                                            <label class="text-gray-700 font-medium mb-3" for="client_company_name">Client’s Company Name</label>
+                                            <input id="client_company_name" type="text" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="client_company_name" autocomplete="off">
+                                            
+                                        </div>
+                              
+                                       <div class="flex mx-auto w-full md:w-1/2">
+                                           <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="submit" >Add Client</button>
+                                       </div>
+                                          
+                                          
+                              
+                                        
+                              
+                                      </form>
+                                </div>
+
+                                
+                    
+                                
+
+                               
+                                
+                            </div>
+                        </div>
+
+                        <!-- Success -->
+                        <div class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg  bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
+                            <div class="relative">
+                                
+                                <button class="absolute top-0 right-0 p-2">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 5L5 15M5 5L15 15" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </button>
+
+                                <div class="flex items-center justify-between flex-col pb-5 pt-5 gap-6">
+                                    <h1 class=" text-neutral800 text-3xl">Success!</h1>
+                                
+                                    <div class="mt-4 mb-3">
+                                        <img src="images/Party Popper.png"/>
+                                        
+                                    </div>
+                                    <div class="my-5 text-neutral800">
+                                        <p class="text-center mb-4">Your invoice has been successfully ceated and sent to your client- <strong>Robertjones@gmail.com</strong></p>
+                                        <p class="text-center">We’ll notify you as soon as you get paid</p>
+                                    </div>
+                                    <div class="flex mx-auto w-full mt-4 gap-3 ">
+                                        <button class="block border border-secondary text-secondary w-full h-[50px] bg-transparent transition ease-in duration-200 text-center text-base rounded flex items-center justify-center" type="submit">View Invoice</button>
+
+                                        <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base rounded flex items-center justify-center" type="submit" >Go to my dashboard</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> 
+                    
+                    <!-- END OF DROPDOWN FORMS & MODALS -->
+
+
+
 
 
                 </div>
@@ -622,6 +942,13 @@
     </div>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="vendors/select2/dist/js/select2.full.js"></script>
+
+    <script>
+        $(function(){
+            $("#clientList").select2();
+        }); 
+    </script>
     <script src="js/main.js"></script>
 
 </body>
