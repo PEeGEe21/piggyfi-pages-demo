@@ -689,7 +689,7 @@
 
                 </div>
                     <div class="py-5  w-full flex gap-4">
-                        <button class="w-1/2 border border-gray-300 py-4 px-3 h-15 flex items-center justify-start rounded focus:outline-none hover:border-gray_cl transition duration-150 ease-in-out"  id="bankAccountBtn">
+                        <button class="w-1/2 border border-gray-300 py-4 px-3 h-15 flex items-center justify-start rounded focus:outline-none hover:border-gray-400 transition duration-150 ease-in-out"  id="bankAccountBtn">
                             <span class="mr-2 pointer-events-none">
                                 <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16.4946 3.36662L28.4946 8.16659C28.9613 8.35326 29.3346 8.91325 29.3346 9.40658V13.8333C29.3346 14.5666 28.7346 15.1666 28.0013 15.1666H4.0013C3.26797 15.1666 2.66797 14.5666 2.66797 13.8333V9.40658C2.66797 8.91325 3.04131 8.35326 3.50798 8.16659L15.508 3.36662C15.7746 3.25995 16.228 3.25995 16.4946 3.36662Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -706,7 +706,7 @@
                             </span> Bank Account
                             
                         </button>
-                        <button class="w-1/2 border border-gray-300 py-4 h-15 flex items-center justify-start px-3 rounded focus:outline-none hover:border-gray_cl transition duration-150 ease-in-out" id="walletAddressBtn">
+                        <button class="w-1/2 border border-gray-300 py-4 h-15 flex items-center justify-start px-3 rounded focus:outline-none hover:border-gray-400 transition duration-150 ease-in-out" id="walletAddressBtn">
                             <span class="mr-2 pointer-events-none">
                                 <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17.332 16.3667H9.33203C8.78536 16.3667 8.33203 15.9134 8.33203 15.3667C8.33203 14.82 8.78536 14.3667 9.33203 14.3667H17.332C17.8787 14.3667 18.332 14.82 18.332 15.3667C18.332 15.9134 17.8787 16.3667 17.332 16.3667Z" fill="#292D32"/>
@@ -785,7 +785,7 @@
 
 
             <!-- Existing bank-->
-                <div class="mt-5 md:mt-0 w-full md:w-1/3 grow">
+                <div class="mt-5 md:mt-0 w-full md:w-1/3 grow hidden">
                     <div class="px-3 py-3 shadow-box rounded-md mt-2 ">
                                                             
                         <div class="relative rounded-full  items-center flex w-full h-12 my-2 ">
@@ -1310,7 +1310,7 @@
                             </div>
                   
                            <div class="flex mx-auto w-full md:w-1/2">
-                               <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="submit" >Withdraw</button>
+                               <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="button" onclick=onWithdraw()>Withdraw</button>
                            </div>
                               
                           </form>
@@ -1342,18 +1342,18 @@
                     <div class="mt-4">
                         <form>
                             <div class="mb-6">
-                                <label class="text-gray-700 font-medium mb-3" for="company_name">Bank Name</label>
-                                <input id="company_name" type="text" placeholder="What is the name of the bank?" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="company_name" autocomplete="off">
+                                <label class="text-gray-700 font-medium mb-3" for="bank_name">Bank Name</label>
+                                <input id="bank_name" type="text" placeholder="What is the name of the bank?" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="bank_name" autocomplete="off">
                                 
                             </div>
                             <div class="mb-6">
-                                <label class="text-gray-700 font-medium mb-3" for="company_name">Account Name</label>
-                                <input id="company_name" type="text" placeholder="Enter the name on account" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="company_name" autocomplete="off">
+                                <label class="text-gray-700 font-medium mb-3" for="account_name">Account Name</label>
+                                <input id="account_name" type="text" placeholder="Enter the name on account" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="account_name" autocomplete="off">
                                 
                             </div>
                             <div class="mb-6">
-                                <label class="text-gray-700 font-medium mb-3" for="company_name">Account Number</label>
-                                <input id="company_name" type="text" placeholder="Enter the account number" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="company_name" autocomplete="off">
+                                <label class="text-gray-700 font-medium mb-3" for="account_number">Account Number</label>
+                                <input id="account_number" type="text" placeholder="Enter the account number" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="account_number" autocomplete="off">
                                 
                             </div>
 
@@ -1435,7 +1435,7 @@
                                             add new address
                                         </button>
                                     </div>
-                                    <input id="company_name" type="text" placeholder="Select or add new wallet address" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="company_name" autocomplete="off">
+                                    <input id="wallet_address" type="text" placeholder="Select or add new wallet address" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="wallet_address" autocomplete="off">
                                     
                                 </div>
                                 <div class="mb-6">
@@ -1527,7 +1527,7 @@
                                 </div>
                     
                             <div class="flex mx-auto w-full md:w-1/2">
-                                <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="submit" >Withdraw</button>
+                                <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="button" onclick=onWithdraw() >Withdraw</button>
                             </div>
                                 
                             </form>
@@ -1555,25 +1555,25 @@
                             
                         </div>
                         <div class="mt-4">
-                            <form>
+                            <form >
                                 <div class="mb-6">
-                                    <label class="text-gray-700 font-medium mb-3" for="company_name">Select Network</label>
-                                    <input id="company_name" type="text" placeholder="What is the name of the bank?" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="company_name" autocomplete="off">
+                                    <label class="text-gray-700 font-medium mb-3" for="network">Select Network</label>
+                                    <input id="network" type="text" placeholder="What is the name of the bank?" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="network" autocomplete="off">
                                     
                                 </div>
                                 <div class="mb-6">
-                                    <label class="text-gray-700 font-medium mb-3" for="company_name">Your wallet name</label>
-                                    <input id="company_name" type="text" placeholder="Enter the name on account" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="company_name" autocomplete="off">
+                                    <label class="text-gray-700 font-medium mb-3" for="wallet_name">Your wallet name</label>
+                                    <input id="wallet_name" type="text" placeholder="Enter the name on account" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="wallet_name" autocomplete="off">
                                     
                                 </div>
                                 <div class="mb-6">
-                                    <label class="text-gray-700 font-medium mb-3" for="company_name">Your wallet address</label>
-                                    <input id="company_name" type="text" placeholder="Enter the account number" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="company_name" autocomplete="off">
+                                    <label class="text-gray-700 font-medium mb-3" for="wallet_address">Your wallet address</label>
+                                    <input id="wallet_address" type="text" placeholder="Enter the account number" class="block w-full h-[50px] px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none" name="wallet_address" autocomplete="off">
                                     
                                 </div>
 
                             <div class="flex mx-auto w-full md:w-1/2">
-                                <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="submit" >Add wallet address</button>
+                                <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="button" onclick=onSubmit() >Add wallet address</button>
                             </div>
                                 
                             </form>
@@ -1590,7 +1590,7 @@
 
 
                 <!-- Success -->
-                    <div class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg  bg-white rounded-md px-4 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
+                    <div class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg  bg-white rounded-md px-4 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full success">
                         <div class="">
 
                             <div class="flex items-center justify-between flex-col pb-5 gap-6">
@@ -1622,7 +1622,7 @@
 
 
                 <!-- Transaction in Progress.... -->
-                    <div class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg  bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
+                    <div class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg  bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full withdraw" id="">
                         <div class="">
 
                             <div class="flex items-center justify-between flex-col pb-5 gap-6">
@@ -1646,7 +1646,7 @@
                                 </div>
                                 <p class="text-center">Your Payment is in Progress. It would take about an hour to get your payment</p>
                                 <div class="flex mx-auto w-full mt-4 ">
-                                    <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="submit" >Back to home</button>
+                                    <a href="pending-withdrawal.html" class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base font-semibold shadow-md rounded flex items-center justify-center" type="submit" >Back to home</a>
                                 </div>
                             </div>
                             

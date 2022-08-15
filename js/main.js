@@ -111,6 +111,7 @@ document.addEventListener('click', (e) => {
 
     const walletAddressBtn = e.target.matches("#walletAddressBtn"); //wallet address button
     const newWalletAddressBtn = e.target.matches("#newWalletAddressBtn"); //new wallet Address button
+    // const successbtn = e.target.matches("#successbtn"); //new wallet Address button
 
 
     let overlay = document.querySelector('#overlay'); //overlay
@@ -123,6 +124,7 @@ document.addEventListener('click', (e) => {
     let newBankAccountForm = document.querySelector('.newBankAccountForm');
     let walletAddressForm = document.querySelector('#walletAddressForm');
     let newWalletAddressForm = document.querySelector('.newWalletAddressForm');
+    // let successfull = document.querySelector('.success');
 
 
 
@@ -169,6 +171,51 @@ document.addEventListener('click', (e) => {
     }
 
 })
+
+
+function onSubmit(){
+    let successfull = document.querySelector('.success');
+    let newWalletAddressForm = document.querySelector('.newWalletAddressForm');
+    successfull.classList.remove('hidden');
+    newWalletAddressForm.classList.add('hidden')
+
+
+}
+function onSave(){
+    let successfull = document.querySelector('.invoice-success');
+    let overlay = document.querySelector('#overlay'); //overlay
+    let header = document.querySelector('.header'); //header
+    header.classList.remove('sticky');
+    successfull.classList.remove('hidden');
+    overlay.classList.remove('hidden')
+}
+function onCloseSave(){
+    let successfull = document.querySelector('.invoice-success');
+    let overlay = document.querySelector('#overlay'); //overlay
+    let header = document.querySelector('.header'); //header
+    
+    header.classList.add('sticky');
+    successfull.classList.add('hidden');
+    overlay.classList.add('hidden')
+}
+function onWithdraw(){
+    let withdraw = document.querySelector('.withdraw');
+
+    let bankAccountForm = document.querySelector('#bankAccountForm');
+    let walletAddressForm = document.querySelector('#walletAddressForm');    
+    
+    if(withdraw){
+        withdraw.classList.remove('hidden');
+    
+        bankAccountForm.classList.add('hidden');
+        walletAddressForm.classList.add('hidden');
+    }else{
+        console.log("theres a problem")
+    }
+    
+
+
+}
 
 
 

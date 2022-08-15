@@ -759,8 +759,8 @@
                                                 <div class="flex flex-col gap-3 w-full w-1/2">
 
                                                 
-                                                    <button class="text-secondary border border-secondary rounded shadow-md w-full h-12 flex items-center justify-center text-sm px-4 transition ease-in duration-200">Save draft</button>
-                                                    <button class="text-white border-0 bg-secondary rounded shadow-md transition ease-in duration-200 w-full h-12 flex items-center justify-center text-sm focus:outline-none focus:border-0 active:outline-none active:border-0 px-4">Create & Send</button>
+                                                    <button class="text-secondary border border-secondary rounded shadow-md w-full h-12 flex items-center justify-center text-sm px-4 transition ease-in duration-200" type="button" >Save draft</button>
+                                                    <button class="text-white border-0 bg-secondary rounded shadow-md transition ease-in duration-200 w-full h-12 flex items-center justify-center text-sm focus:outline-none focus:border-0 active:outline-none active:border-0 px-4" onclick=onSave() type="button">Create & Send</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -906,13 +906,16 @@
                         </div>
 
                         <!-- Success -->
-                        <div class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg  bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
+                        <div class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg  bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto max-h-full invoice-success">
                             <div class="relative">
                                 
-                                <button class="absolute top-0 right-0 p-2">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="absolute top-0 right-0 p-2" onclick=onCloseSave()>
+                                    <span class="pointer-events-none">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M15 5L5 15M5 5L15 15" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                    </span>
+                                    
                                 </button>
 
                                 <div class="flex items-center justify-between flex-col pb-5 pt-5 gap-6">
@@ -927,9 +930,9 @@
                                         <p class="text-center">We’ll notify you as soon as you get paid</p>
                                     </div>
                                     <div class="flex mx-auto w-full mt-4 gap-3 ">
-                                        <button class="block border border-secondary text-secondary w-full h-[50px] bg-transparent transition ease-in duration-200 text-center text-base rounded flex items-center justify-center" type="submit">View Invoice</button>
+                                        <a class="block border border-secondary text-secondary w-full h-[50px] bg-transparent transition ease-in duration-200 text-center text-base rounded flex items-center justify-center" href="invoices.html">View Invoice</a>
 
-                                        <button class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base rounded flex items-center justify-center" type="submit" >Go to my dashboard</button>
+                                        <a href="dashboard.html" class="block bg-secondary w-full h-[50px] text-white bg-secondary transition ease-in duration-200 text-center text-base rounded flex items-center justify-center" >Go to my dashboard</a>
                                     </div>
                                 </div>
                                 
