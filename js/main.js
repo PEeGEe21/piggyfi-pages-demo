@@ -57,6 +57,27 @@ document.addEventListener('click', (e) => {
 })
 
 document.addEventListener('click', (e) => {
+    const isSubmenuDropdownButton = e.target.matches("[data-submenu-dropdown-btn]")
+    if(!isSubmenuDropdownButton && e.target.closest('[data-submenu-dropdown]') != null) return
+
+    if(isSubmenuDropdownButton){
+        console.log("iiiiorewwwerc")
+    }
+
+    let submenuCurrentDropdown
+    if(submenuCurrentDropdown){
+        submenuCurrentDropdown = e.target.closest('[data-submenu-dropdown]')
+        submenuCurrentDropdown.classList.toggle('show-submenu')
+        
+    }
+
+    document.querySelectorAll("[data-submenu-dropdown].show-submenu").forEach(dropdown => {
+        if(dropdown === submenuCurrentDropdown) return
+        dropdown.classList.remove('show-submenu')
+    })
+})
+
+document.addEventListener('click', (e) => {
     const personalInfo = e.target.matches("#personal_info");
     const newClient = e.target.matches("#newClient");
 
@@ -193,7 +214,7 @@ function onCloseSave(){
     let successfull = document.querySelector('.invoice-success');
     let overlay = document.querySelector('#overlay'); //overlay
     let header = document.querySelector('.header'); //header
-    
+
     header.classList.add('sticky');
     successfull.classList.add('hidden');
     overlay.classList.add('hidden')

@@ -452,6 +452,9 @@ nav.invoice-tab a:hover {
 .active .dropdown-menu.large-dropdown  {
   display: block;
 }
+.show-submenu .dropdown-menu.submenu-dropdown  {
+  display: block;
+}
 
 .show .dropdown-toggle[data-toggle-icon='true']::after {
   transform: rotate(180deg);
