@@ -65,8 +65,9 @@ document.addEventListener('click', (e) => {
     }
 
     let submenuCurrentDropdown
-    if(submenuCurrentDropdown){
+    if(isSubmenuDropdownButton){
         submenuCurrentDropdown = e.target.closest('[data-submenu-dropdown]')
+
         submenuCurrentDropdown.classList.toggle('show-submenu')
         
     }

@@ -20,8 +20,8 @@
 
 </head>
 <body>
-            <div class="client-invoices">
-                <div class="sidebar text-gray-700 shadow">
+            <div class="client">
+                <!-- <div class="sidebar text-gray-700 shadow">
                     <div class="relative h-full">
                         <div class="flex items-center justify-center relative py-8 gap-4 border-b border-border_cl ">
 
@@ -71,21 +71,21 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!--Main-->
-                <div class="main">
+                <div class="main ml-0">
                         <!--Header-->
-                        <div class="header z-50 sticky top-0 bg-white py-2 w-full px-4" id="header">
+                        <div class="header z-50 top-0 bg-white py-2 w-full px-4">
                             <div class="container mx-auto flex items-center justify-between gap-8 md:px-4 ">
 
-                                <div class="block md:hidden">
-                                    <img src="../images/Logo2.png" alt="">
+                                <div>
+                                    <img src="../images/Logo2.png" alt="Logo">
+                                </div>
+                                <div>
+                                    <button type="button" class="text-gray-500  hover:text-gray-600 focus:outline-none focus:text-gray-600 my-4 bg-border_cl border-gray-300 text-lg px-1 rounded-md mobile-menu-btn" aria-label="toggle menu"><div class="bar-one"></div><div class="bar-two"></div><div class="bar-three"></div></button>
+                                </div>
 
-                                </div>
-                                <div class="">
-                                    <button type="button" class=" text-gray-500  hover:text-gray-600 focus:outline-none focus:text-gray-600 my-4 bg-border_cl border-gray-300 text-lg px-1 rounded-md mobile-menu-btn" aria-label="toggle menu"><div class="bar-one"></div><div class="bar-two"></div><div class="bar-three"></div></button>
-                                </div>
 
 
 
@@ -96,7 +96,7 @@
                         <!-- End of Header -->
 
                         <!--Main box-->
-                        <div class="main-box">
+                        <div class="main-box max-w-6xl mx-auto container px-2 sm:px-3 md:px-8">
                             <div class="h-full pb-24 px-4 md:px-12 ">
                                 <div class="flex flex-row items-center flex-wrap justify-between">
 
@@ -179,34 +179,40 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="flex items-start justify-between mt-5 md:mt-10 mb-10 flex-wrap">
-                                                    <div class="mt-5 md:mt-0">
+
+                                                <div class="grid grid-cols-1 md:grid-cols-3 my-10 gap-4">
+                                                    <div class="mt-4">
                                                         <span class="text-neutral600 text-sm">From:</span>
                                                         <h3 class="text-xl font-bold text-neutral700  my-1">Rebecca Wilson</h3>
                                                         <p class="text-neutral600 text-sm">RebeccaWilson@gmail.com</p>
                                                     </div>
-                                                    <div class="mt-5 md:mt-0">
-                                                        <span class="text-neutral600 text-sm">Sent to</span>
+                                                    <div class="mt-4 ">
+                                                        <div>
+                                                            <span class="text-neutral600 text-sm">Sent to</span>
                                                         <h3 class="text-xl font-bold text-neutral700 my-1">ORIGNE LLC</h3>
                                                         <p class="text-neutral600 text-sm">robertjones@gmail.com</p>
-
-                                                    </div>
-                                                    <div class="mt-5 md:mt-0">
-                                                        <div class="relative  font-normal inline-block text-[#407BFF] leading-tight ">
-                                                            <span class="bg-[#EFF4FE] flex items-center rounded-full text-base  justify-start py-2 px-5 ">
-                                                                <span class="h-2 w-4 text-[#407BFF] rounded-full text-center">
-                                                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <circle cx="3" cy="3" r="3" fill="currentColor"/>
-                                                                </svg>
-                                                            </span> Payment in Progress
-                                                            </span>
-                                                            
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                        
 
-                                                <div class="flex items-center justify-start w-full md:w-9/12 flex-wrap md:flex-nowrap mb-10">
-                                                    <div class="w-full md:w-4/6">
+                                                    </div>
+                                                    <div class="mt-4">
+                                                        
+                                                                <!-- <div class="relative flex items-center md:justify-end font-normal inline-block text-gray-500 leading-tight "> -->
+                                                                    <div class="relative flex items-center md:justify-end font-normal font-normal inline-block text-[#407BFF] leading-tight ">
+                                                                        <span class="bg-[#EFF4FE] flex items-center rounded-full text-base  justify-start py-2 px-5 ">
+                                                                            <span class="h-2 w-4 text-[#407BFF] rounded-full text-center">
+                                                                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <circle cx="3" cy="3" r="3" fill="currentColor"/>
+                                                                            </svg>
+                                                                        </span> Payment in Progress
+                                                                        </span>
+                                                                        
+                                                                    </div>
+                                                                    
+                                                                
+                                                            <!-- </div> -->
+                                                    </div>
+                                                    <div class="w-full mt-4 flex items-center">
                                                         <p class="inline-flex items-center gap-1 "><span class="text-sm text-neutral600 font-normal">Payment Currency:</span> 
                                                             <span>
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,40 +224,42 @@
                                                         </span> Celo
                                                     </p>
                                                     </div>
-                                                    <div class="w-full md:w-1/2 mt-5 md:mt-0">
+                                                    <div class="w-full mt-4 ">
                                                         <div class="text-left font-normal text-sm text-neutral600 ">
                                                             Payment address: <button  class="border border-secondary bg-transparent text-secondary px-2 py-2 rounded text-sm ml-2">View Address</button>
                                                         </div>
                                                         
                                                     </div>
-                                                    
+
+
                                                 </div>
+
 
                                                 <div class=" overflow-x-auto relative">
                                                     <table class="min-w-full leading-normal table-auto">
                                                         <div class="inline-block min-w-full table-auto">
                                                             <thead class="bg-neutral50">
                                                                 <tr>
-                                                                    <th scope="col" class="px-5 py-3  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal ">
+                                                                    <th scope="col" class="px-5 py-3  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-semibold ">
                                                                         S/N
                                                                     </th>
-                                                                    <th scope="col" class="px-5 py-3  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal w-1/3">
+                                                                    <th scope="col" class="px-5 py-3  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-semibold w-1/3">
                                                                         Description
                                                                     </th>
-                                                                    <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+                                                                    <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-semibold">
                                                                         Quantity
                                                                     </th>
-                                                                    <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal ">
+                                                                    <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-semibold ">
                                                                         Unit Price ($)
                                                                     </th>
-                                                                    <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+                                                                    <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-semibold">
                                                                         Discount
                                                                     </th>
 
-                                                                    <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+                                                                    <th scope="col" class="px-5 py-3 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-semibold">
                                                                         Tax (%)
                                                                     </th>
-                                                                    <th scope="col" class="px-5 py-3  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+                                                                    <th scope="col" class="px-5 py-3  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-semibold">
                                                                         Amount
                                                                     </th>
                                                                 </tr>
@@ -318,19 +326,19 @@
                                                 </div>
 
                                                 <div class="relative">
-                                                    <div class="px-5  py-5 flex flex-col xs:flex-row items-end xs:justify-between">
+                                                    <div class="py-5 flex flex-col xs:flex-row items-end xs:justify-between">
                                                         <div class="md:w-7/12 lg:w-6/12 ">
                                                             <table class="min-w-full leading-normal table-auto">
                                                                 <div class="inline-block min-w-full">
                                                                     <tbody>
                                                                         
                                                                         <tr>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm">
                                                                                 <p class="text-neutral700 text-sm whitespace-no-wrap">
                                                                                     Subtotal
                                                                                 </p>
                                                                             </td>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm">
                                                                                 <p class="text-neutral800 text-base whitespace-no-wrap font-semibold text-right">
                                                                                     $100.00
                                                                                 </p>
@@ -338,24 +346,24 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm">
                                                                                 <p class="text-neutral700 text-sm  whitespace-no-wrap">
                                                                                     Discount
                                                                                 </p>
                                                                             </td>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-right">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm text-right">
                                                                                 <p class="text-neutral800 text-base whitespace-no-wrap font-semibold">
                                                                                     $0.00
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm">
                                                                                 <p class="text-neutral700 text-sm  whitespace-no-wrap ">
                                                                                     Tax
                                                                                 </p>
                                                                             </td>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white ">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white ">
                                                                                 <p class="text-neutral800 text-base whitespace-no-wrap font-semibold text-right">
                                                                                     $0.00
                                                                                 </p>
@@ -363,12 +371,12 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">
-                                                                                <p class="text-neutral700 font-bold text-lg whitespace-no-wrap">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm">
+                                                                                <p class="text-neutral700 font-normal text-lg whitespace-no-wrap">
                                                                                     Total amount
                                                                                 </p>
                                                                             </td>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm">
                                                                                 <p class="text-neutral800 font-bold whitespace-no-wrap text-xl text-right">
                                                                                     $100.00
                                                                                 </p>
@@ -376,12 +384,12 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">
-                                                                                <p class="text-neutral700 font-bold text-lg  whitespace-no-wrap">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm">
+                                                                                <p class="text-neutral700 font-normal text-lg  whitespace-no-wrap">
                                                                                     Celo amount
                                                                                 </p>
                                                                             </td>
-                                                                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">
+                                                                            <td class="py-4 border-b border-gray-200 bg-white text-sm">
                                                                                 <p class="text-neutral800 font-bold whitespace-no-wrap text-xl text-right">
                                                                                     celo100.00
                                                                                 </p>
@@ -396,13 +404,14 @@
 
                                                     </div>
                                                      
-
-                                                    <div class="absolute bottom-1/4 left-0 hidden md:block">
+                                                    <div class="w-full mt-4">
                                                         <span class="text-base font-semibold text-neutral800">
                                                             Note:
                                                         </span>
                                                         <p class="font-normal text-sm text-neutral700">Thank you for your trust.</p>
                                                     </div>
+
+                                                    
                                                 </div>
                                             </div>
                                         </div>

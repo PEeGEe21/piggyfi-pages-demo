@@ -24,24 +24,9 @@
     <div>
         <div class="sidebar text-gray-700 shadow">
             <div>
-                <div class="flex items-center justify-center relative py-8 gap-4 border-b border-border_cl">
+                <div class="flex items-center justify-center relative py-4 gap-4 border-b border-border_cl">
 
-                    <span class="
-                    px-3
-                    py-3
-                    bg-[#F1F0FB]
-                    text-gray-500 
-                    transition
-                        duration-150
-                        ease-in-out 
-                        flex
-                        items-center 
-                        justify-center
-                        h-12 
-                        w-12
-                    font-medium rounded-full hover:bg-blue-700 hover:shadow-lg hover:text-white
-                    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-                    active:bg-blue-800 active:shadow-lg active:text-white
+                    <span class="px-3 py-3 bg-[#F1F0FB] text-gray-500 transition duration-150 ease-in-out flex items-center justify-center h-12 w-12 font-medium rounded-full hover:bg-blue-700 hover:shadow-lg hover:text-white focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg active:text-white
                     
                     ">
                        RW 
@@ -970,7 +955,7 @@
 
 
             <!-- Bank --- Where do you want to withdraw to? -->
-            <div id="bankAccountForm" class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40em] max-w-lg md:max-w-xl bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
+            <div id="bankAccountForm" class="dialog hidden fixed z-[10002] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[40em] max-w-lg md:max-w-xl bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg overflow-y-auto  h-auto   max-h-full">
                 <div class="">
 
                     <div class="modal-header flex items-center justify-between pb-5">
@@ -1008,6 +993,9 @@
                                                 
                                         </span> Bank Account
                                     </option>
+                                    <option>
+                                        Wallet Adress
+                                    </option>
                                 </select>
                                 
                             </div>
@@ -1039,7 +1027,7 @@
                                     
 
                                     <!-- <div class="mt-5 md:mt-0 w-full md:w-1/3 grow"> -->
-                                        <div class="dropdown-menu large-dropdown px-3 py-3 shadow-box rounded-md mt-2 w-full ">
+                                        <div class="dropdown-menu large-dropdown px-3 py-3 shadow-box rounded-md mt-2 w-full h-64 overflow-y-auto scrollbar-change">
                                                                                 
                                             <div class="relative rounded-full  items-center flex w-full h-12 my-2 ">
                                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none h-full">
@@ -1240,7 +1228,7 @@
                                     
 
                                     <!-- <div class="mt-5 md:mt-0 w-full md:w-1/3 grow"> -->
-                                        <div class=" dropdown-menu large-dropdown px-3 py-3 shadow-box rounded-md w-full ">
+                                        <div class=" dropdown-menu large-dropdown px-3 py-3 shadow-box rounded-md w-full h-40 overflow-y-auto scrollbar-change ">
                                                     
                                             <div class="relative rounded-full  items-center flex w-full h-12 my-2 ">
                                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none h-full">
@@ -1419,6 +1407,9 @@
                                                     
                                             </span> Wallet address
                                         </option>
+                                        <option>
+                                            Bank account
+                                        </option>
                                     </select>
                                     
                                 </div>
@@ -1458,7 +1449,7 @@
                                         
     
                                         <!-- <div class="mt-5 md:mt-0 w-full md:w-1/3 grow"> -->
-                                            <div class=" dropdown-menu large-dropdown px-3 py-3 shadow-box rounded-md w-full ">
+                                            <div class=" dropdown-menu large-dropdown px-3 py-3 shadow-box rounded-md w-full h-40 overflow-y-auto scrollbar-change ">
                                                         
                                                 <div class="relative rounded-full  items-center flex w-full h-12 my-2 ">
                                                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none h-full">
