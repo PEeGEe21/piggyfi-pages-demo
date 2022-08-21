@@ -11,7 +11,7 @@ body {
 }
 
 .left {
-  background: url("../images/Geometric\ shapes.png");
+  background: url('../images/Geometric\ shapes.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -321,15 +321,15 @@ nav.invoice-tab a:hover {
   margin: 0;
   background: rgba(245, 245, 246, 0.6);
 }
-.dialog.fade {
-  /* transition: opacity 0.15s linear;
-  opacity: 1; */
-}
+/* .dialog.fade {
+  transition: opacity 0.15s linear;
+  opacity: 1;
+} */
 
-.dialog {
-  /* transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  opacity: 0; */
-}
+/* .dialog {
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  opacity: 0;
+} */
 
 /*===== DROPDOWN ====== */
 
