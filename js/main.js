@@ -94,6 +94,9 @@ document.addEventListener('click', (e) => {
     if(personalInfo){
         
         // personalInfoModal.classList.toggle('show')
+
+        personalInfoModal.classList.add('fade-in');
+        overlay.classList.add('fade-in');
         personalInfoModal.classList.remove('hidden');
         overlay.classList.remove('hidden');
         header.classList.remove('sticky');
@@ -106,6 +109,8 @@ document.addEventListener('click', (e) => {
         header.classList.add('sticky');
         
     } else if(newClient){
+        clientForm.classList.add('fade-in');
+        overlay.classList.add('fade-in');
         clientForm.classList.remove('hidden');
         overlay.classList.remove('hidden');
         header.classList.remove('sticky');
@@ -153,10 +158,13 @@ document.addEventListener('click', (e) => {
     if(withdrawButton){
         // personalInfoModal.classList.toggle('show')
         step1.classList.remove('hidden');
+        step1.classList.add('fade-in');
+        overlay.classList.add('fade-in');
         overlay.classList.remove('hidden');
         header.classList.remove('sticky');
     }else if(bankAccountBtn){
         step1.classList.add('hidden');
+        
         bankAccountForm.classList.remove('hidden');
         // overlay.classList.add('hidden');
         // header.classList.add('sticky'); 
@@ -164,12 +172,15 @@ document.addEventListener('click', (e) => {
         // console.log("heyyyy")
         // // step1.classList.add('hidden');
         bankAccountForm.classList.add('hidden');
-
+        newBankAccountForm.classList.add('fade-in');
         newBankAccountForm.classList.remove('hidden');
 
         // overlay.classList.add('hidden');
         // header.classList.add('sticky'); 
     }else if(walletAddressBtn){
+
+        walletAddressForm.classList.add('fade-in');
+        overlay.classList.add('fade-in');
         walletAddressForm.classList.remove('hidden');
         overlay.classList.remove('hidden');
         header.classList.remove('sticky');
@@ -179,6 +190,8 @@ document.addEventListener('click', (e) => {
         walletAddressForm.classList.add('hidden');
 
         newWalletAddressForm.classList.remove('hidden');
+        newWalletAddressForm.classList.add('fade-in');
+
 
         // overlay.classList.add('hidden');
         // header.classList.add('sticky'); 
