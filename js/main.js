@@ -1,10 +1,21 @@
-const primaryNav = document.querySelector(".sidebar");
 
-const navToggle = document.querySelector(".mobile-menu-btn");
 
-navToggle.addEventListener('click', () => {
-    primaryNav.classList.toggle('open')
-})
+// $(document).ready(function(){
+    function mobileMenu(){
+        const primaryNav = document.querySelector(".sidebar");
+
+        const navToggle = document.querySelector(".mobile-menu-btn");
+
+        if(navToggle){
+            navToggle.addEventListener('click', () => {
+                primaryNav.classList.toggle('open')
+            })
+        }
+        
+    }
+
+    mobileMenu();
+// })
 
 // const dropbtnvalue = document.querySelector(".dropdown-toggle").getAttribute('aria-expanded');
 // const dropbtn = document.querySelector("# dropdownMenuButton")
